@@ -1,0 +1,6 @@
+framework module Pods_SlTest {
+  umbrella header "Pods-SlTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

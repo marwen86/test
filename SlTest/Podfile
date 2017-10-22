@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SlTest' do
+  use_frameworks!
+  pod 'Realm'
+  pod 'RealmSwift'
+  # Pods for SlTest
+
+  target 'SlTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
