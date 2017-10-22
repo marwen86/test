@@ -55,7 +55,7 @@ struct DetailViewModel: viewModelProtocol {
     
     }
     
-    init(withForecast  forecastItem : ForecastItem) {
+    init(withForecast  forecastItem : Forecast) {
         
         if let weather = forecastItem.weather , let weatherItem = weather.first  {
             main =  weatherItem.main

@@ -31,7 +31,7 @@ class TempDetailViewController: UIViewController {
         }
     }
     
-    var forecastItem: ForecastItem?
+    var forecastItem: Forecast?
 
     func updateView() {
         if !isViewLoaded {

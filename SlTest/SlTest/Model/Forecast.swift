@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct ForecastItem {
+struct Forecast {
     var dt : Int
     var temp : Temp?
     var pressure : Double

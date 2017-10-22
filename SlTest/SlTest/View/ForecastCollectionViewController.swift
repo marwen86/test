@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "weatherCollectionViewCell"
 
 extension ForecastCollectionViewController {
-    func refreshView(listForecast list: [ForecastItem]?){
+    func refreshView(listForecast list: [Forecast]?){
         self.forecastList = list
         self.collectionView?.reloadData()
     }
@@ -19,7 +19,7 @@ extension ForecastCollectionViewController {
 
 class ForecastCollectionViewController: UICollectionViewController , ViewProtocol {
     
-    var forecastList : [ForecastItem]?
+    var forecastList : [Forecast]?
     var presenter : viewPresenter?
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)

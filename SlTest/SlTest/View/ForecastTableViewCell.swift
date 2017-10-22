@@ -16,7 +16,7 @@ class ForecastTableViewCell: UITableViewCell {
     @IBOutlet var deg : UILabel!
     @IBOutlet var clouds : UILabel!
     
-    var forecastItem : ForecastItem? {
+    var forecastItem : Forecast? {
         didSet {
          updateView()
         }

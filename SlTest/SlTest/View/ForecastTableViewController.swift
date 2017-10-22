@@ -10,12 +10,12 @@ import UIKit
 
 
 protocol ViewProtocol : class{
-    func refreshView(listForecast list: [ForecastItem]?)
+    func refreshView(listForecast list: [Forecast]?)
 }
 
 
 extension ForecastTableViewController {
-    func refreshView(listForecast list: [ForecastItem]?){
+    func refreshView(listForecast list: [Forecast]?){
         self.forecastList = list
         self.tableView.reloadData()
     }
@@ -23,7 +23,7 @@ extension ForecastTableViewController {
 
 class ForecastTableViewController: UITableViewController, ViewProtocol {
 
-    var forecastList : [ForecastItem]?
+    var forecastList : [Forecast]?
     var presenter : viewPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +91,7 @@ class ForecastTableViewController: UITableViewController, ViewProtocol {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if let identifier = segue.identifier , identifier == "TempDetailViewController" , let des = segue.destination as? TempDetailViewController , let sender = sender as? ForecastItem{
+        if let identifier = segue.identifier , identifier == "TempDetailViewController" , let des = segue.destination as? TempDetailViewController , let sender = sender as? Forecast{
            des.forecastItem = sender
         }
     }

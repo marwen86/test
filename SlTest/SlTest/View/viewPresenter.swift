@@ -22,7 +22,7 @@ class viewPresenter: NSObject {
         DownloadDataManager.sharedInstance.loadData(fromUrl: url, success: { (json) in
             print(json)
             //parseJson
-            let list = ForecastItem.parseForecast(json: json)
+            let list = Forecast.parseForecast(json: json)
             print("coool")
             self.view?.refreshView(listForecast: list)
             
@@ -49,9 +49,9 @@ extension Temp {
     }
 }
 
-extension ForecastItem {
-   static func parseForecast(json : Dictionary<String , AnyObject>)-> [ForecastItem]? {
-        var result = [ForecastItem]()
+extension Forecast {
+   static func parseForecast(json : Dictionary<String , AnyObject>)-> [Forecast]? {
+        var result = [Forecast]()
         if let list = json["list"] as? Array<AnyObject> {
             for item in list {
                 guard let item = item as? Dictionary<String,AnyObject> ,
@@ -68,7 +68,7 @@ extension ForecastItem {
                         return nil
                 }
                 
-                let forecast = ForecastItem(dt: dt, temp: tempItem, pressure: pressure, humidity: humidity, weather: listWeather, speed: speed, deg: deg, clouds: clouds)
+                let forecast = Forecast(dt: dt, temp: tempItem, pressure: pressure, humidity: humidity, weather: listWeather, speed: speed, deg: deg, clouds: clouds)
                 result.append(forecast)
             }
             

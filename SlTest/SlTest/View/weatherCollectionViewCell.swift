@@ -22,7 +22,7 @@ class weatherCollectionViewCell: UICollectionViewCell {
     }
     
     
-    var forecastItem : ForecastItem? {
+    var forecastItem : Forecast? {
         didSet {
             updateView()
         }

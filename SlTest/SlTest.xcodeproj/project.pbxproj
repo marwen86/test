@@ -16,7 +16,7 @@
 		F51656D11F9B85220052B3AC /* SlTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656D01F9B85220052B3AC /* SlTestTests.swift */; };
 		F51656DF1F9B856F0052B3AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656DE1F9B856F0052B3AC /* API.swift */; };
 		F51656E11F9B87F10052B3AC /* DownloadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656E01F9B87F10052B3AC /* DownloadDataManager.swift */; };
-		F51656E31F9B8B030052B3AC /* ForecastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656E21F9B8B030052B3AC /* ForecastItem.swift */; };
+		F51656E31F9B8B030052B3AC /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656E21F9B8B030052B3AC /* Forecast.swift */; };
 		F51656E51F9B8BEA0052B3AC /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656E41F9B8BEA0052B3AC /* Temp.swift */; };
 		F51656E71F9B8C060052B3AC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51656E61F9B8C060052B3AC /* Weather.swift */; };
 		F51656FC1F9C08310052B3AC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51656FA1F9C08310052B3AC /* Realm.framework */; };
@@ -62,7 +62,7 @@
 		F51656D21F9B85220052B3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51656DE1F9B856F0052B3AC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F51656E01F9B87F10052B3AC /* DownloadDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDataManager.swift; sourceTree = "<group>"; };
-		F51656E21F9B8B030052B3AC /* ForecastItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastItem.swift; sourceTree = "<group>"; };
+		F51656E21F9B8B030052B3AC /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		F51656E41F9B8BEA0052B3AC /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		F51656E61F9B8C060052B3AC /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		F51656FA1F9C08310052B3AC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/SlTest-hiwlkrjrxnumxcbplulhnggpryxb/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		F51656DC1F9B85630052B3AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F51656E21F9B8B030052B3AC /* ForecastItem.swift */,
+				F51656E21F9B8B030052B3AC /* Forecast.swift */,
 				F51656E61F9B8C060052B3AC /* Weather.swift */,
 				F51656E41F9B8BEA0052B3AC /* Temp.swift */,
 			);
@@ -415,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51656E31F9B8B030052B3AC /* ForecastItem.swift in Sources */,
+				F51656E31F9B8B030052B3AC /* Forecast.swift in Sources */,
 				F51657061F9C11380052B3AC /* ForecastCollectionViewController.swift in Sources */,
 				F51657121F9C11470052B3AC /* Date+Formatter.swift in Sources */,
 				F51657161F9C11470052B3AC /* UIViewController+Alert.swift in Sources */,
